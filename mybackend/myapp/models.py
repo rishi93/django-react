@@ -6,7 +6,13 @@ class Blog(models.Model):
     title = models.CharField(max_length=200, null=False)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blogs')
 
+    def __str__(self):
+        return self.title
+
 class Entry(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name='entries')
     headline = models.CharField(max_length=200, null=False)
     content = models.TextField(null=False)
+
+    def __str__(self):
+        return self.headline
