@@ -1,0 +1,4 @@
+SECRET_KEY=something
+DATABASE_NAME=something
+DATABASE_USER=something
+DATABASE_PASS=something

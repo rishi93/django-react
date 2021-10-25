@@ -1,0 +1,3 @@
+POSTGRES_DB=something
+POSTGRES_USER=something
+POSTGRES_PASSWORD=something
