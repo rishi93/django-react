@@ -1,0 +1,11 @@
+# Ignore the installed npm modules
+node_modules/
+# Ignore the POSTGRES volume
+data/
+# Ignore all .pyc files
+*.pyc
+__pycache__/
+# Bundled javascript can be built freshly
+dist/bundle.js
+# Ignore all .env files
+*.env
