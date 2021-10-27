@@ -1,0 +1,28 @@
+[
+    {
+        "model": "myapp.blog",
+        "pk": 1,
+        "fields": {
+            "title": "Python articles",
+            "author": 1
+        }
+    },
+    {
+        "model": "myapp.entry",
+        "pk": 1,
+        "fields": {
+            "blog": 1,
+            "headline": "Hello world!",
+            "content": "Welcome to Python"
+        }
+    },
+    {
+        "model": "myapp.entry",
+        "pk": 2,
+        "fields": {
+            "blog": 1,
+            "headline": "Variables in Python",
+            "content": "Python is dynamically typed"
+        }
+    }
+]
