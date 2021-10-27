@@ -1,10 +1,22 @@
-import React from 'react';
-import Hero from './Hero';
+import React, { useEffect, useState } from 'react';
+import LoggedIn from './LoggedIn';
+import LoggedOut from './LoggedOut';
 
 const App = () => {
+    const [loggedIn, setLoggedIn] = useState(null);
+
+    useEffect(() => {
+        if(localStorage.getItem('token') !== null) {
+            setLoggedIn(true);
+        }
+    });
+
     return (
         <>
-            <Hero />
+            {loggedIn ? 
+                <LoggedIn setLoggedIn={setLoggedIn}/> : 
+                <LoggedOut setLoggedIn={setLoggedIn} />
+            }
         </>
     );
 }
